@@ -1,0 +1,32 @@
+- Definition statement:
+        - I want to create an application that allows other fellow book lovers to rate books and share a comment on
+        their favorite phrase/scene from that book.
+- Define your audience:
+        - Aspiring author's who want ideas
+        - Fellow readers who have the same interest in book genres as myself
+        - Friends and family who have read the same books
+- Outline the content of the application:
+      - What do I want on each page? :
+        - Home pg: Title, about me, navigation to the books
+        - Second pg: Image of twisted love book cover, area to rate book out of five, area to leave comment,
+        nav to other books and home pg
+        - Third pg: Image of twisted games book cover, same as second pg
+        - Fourth pg: Image of twisted hate book cover, same as other two pages.
+        - Fifth pg: Image of twisted lies book cover, same as other three pages.
+- What do I want the functionality of each page to be?
+        - Home pg: Access to all of the other pages, logo, title of web app
+        - Second pg: area to rate twisted love, area to leave a comment w/fav scene or quote, nav
+        - Third page: same as 2nd pg but with twisted games
+        - Fourth pg: same as other two but with twisted hate
+        - Fifth pg: same as other three but with twisted lies
+- What is the purpose of my application?
+        - To allow other book readers to rate and comment scenes/quotes from books I have read
+- What business or real world problem am I going to solve?
+        - This web application could be a way of readers to connect to each other or myself with a
+        similar book taste to me.
+- Define the attributes of your website:
+        - Color palete: 040303, 931621, FFFFFF
+        -Images: personal photos of each book cover
+        - Logos: will use one of the recommended logo websites; logo of book
+        -Navigation: Hamburger on each page to other pages.
+- Link to User Story Map: not completed yet, will add when done.
