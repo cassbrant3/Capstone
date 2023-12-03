@@ -1,0 +1,25 @@
+* {
+  background-color: #040303;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about {
+color: #931621;
+}
+.nav-bar{
+  text-align: right;
+}
+.nav-bar, .main-contact {
+  color:white;
+}
+
+#h2-contact {
+  color:#931621;
+}
+.main-contact {
+  text-align: center;
+font-style: italic;
+}
+.home-introduction{
+  color: #931621;
+}
