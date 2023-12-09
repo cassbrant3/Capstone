@@ -1,25 +1,47 @@
+:root {
+--background-color: #040303;
+--text-primary-color: #931621;
+--text-secondary-color: #FFFFFF;
+}
 * {
-  background-color: #040303;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: 'Playfair Display', serif;
 }
 
-.about {
-color: #931621;
+.home-introduction, .about, .main-contact {
+color: var(--text-primary-color);
 }
-.nav-bar{
-  text-align: right;
+.home-background, .about-background, .contact-background {
+  background-color: var(--background-color);
 }
-.nav-bar, .main-contact {
-  color:white;
+.form-colors {
+  color: var(--text-secondary-color);
 }
 
-#h2-contact {
-  color:#931621;
+#h3-contact {
+  color: var(--text-secondary-color);
 }
+.home-introduction {
+  text-align: center;
+}
+
 .main-contact {
   text-align: center;
 font-style: italic;
 }
-.home-introduction{
-  color: #931621;
+.book-rose {
+  background-image: url("https://cdn.pixabay.com/photo/2014/08/16/18/17/book-419589_1280.jpg");
+  background-size: cover;
+  height: 80vh;
 }
+
+@media (min-width: 550px) {
+  nav > .fa-bars {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .hidden--mobile {
+    display: none;
+  }
+}
+
