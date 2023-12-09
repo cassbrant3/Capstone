@@ -15,7 +15,7 @@
         - Fifth pg: Image of twisted lies book cover, same as other three pages.
 - What do I want the functionality of each page to be?
         - Home pg: Access to all of the other pages, logo, title of web app
-        - Second pg: area to rate twisted love, area to leave a comment w/fav scene or quote, nav
+        - Second pg: area to rate (rating with stars instead of numbers) twisted love, area to leave a comment w/fav scene or quote, nav
         - Third page: same as 2nd pg but with twisted games
         - Fourth pg: same as other two but with twisted hate
         - Fifth pg: same as other three but with twisted lies
