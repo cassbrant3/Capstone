@@ -44,4 +44,8 @@ font-style: italic;
     display: none;
   }
 }
+.link {
+  display: flex;
+flex-direction: column;
+}
 
