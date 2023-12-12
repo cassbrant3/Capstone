@@ -16,7 +16,7 @@ color: var(--text-primary-color);
 .form-colors-contact {
   color: var(--text-secondary-color);
 }
-.form-colors {
+.form-colors, .twisted-description, .twisted-rating {
   color: var(--text-primary-color);
 }
 
@@ -60,15 +60,12 @@ flex-direction: column;
 
 
 .boxes-twisted {
-  content: "";
-  display: table;
-  clear: both;
+  display: grid;
+  grid-template-columns:55% 35%;
 }
 .twisted-comments {
-  float: right;
-  height: 470px;
-  width: 23%;
-  padding: 0 10px;
+  display:flex;
+  justify-content: flex-start;
 }
 .twisted-img {
   display: flex;
