@@ -7,23 +7,28 @@
 font-family: 'Playfair Display', serif;
 }
 
-.home-introduction, .about, .main-contact {
+.twisted-text {
 color: var(--text-primary-color);
 }
-.home-background, .about-background, .contact-background {
+.home-background, .about-background, .contact-background, .twisted-background {
   background-color: var(--background-color);
 }
-.form-colors {
+.form-colors-contact {
   color: var(--text-secondary-color);
 }
+.form-colors {
+  color: var(--text-primary-color);
+}
 
-#h3-contact {
+#h3-contact, .home-introduction, .about, .main-contact {
   color: var(--text-secondary-color);
 }
 .home-introduction {
   text-align: center;
 }
-
+.nav-bar {
+  text-align: right;
+}
 .main-contact {
   text-align: center;
 font-style: italic;
@@ -31,7 +36,11 @@ font-style: italic;
 .book-rose {
   background-image: url("https://cdn.pixabay.com/photo/2014/08/16/18/17/book-419589_1280.jpg");
   background-size: cover;
-  height: 80vh;
+  height: 75vh;
+}
+header > h1 {
+  text-align: center;
+  color: var(--text-secondary-color);
 }
 
 @media (min-width: 550px) {
@@ -48,4 +57,24 @@ font-style: italic;
   display: flex;
 flex-direction: column;
 }
+
+
+.boxes-twisted {
+  content: "";
+  display: table;
+  clear: both;
+}
+.twisted-comments {
+  float: right;
+  height: 470px;
+  width: 23%;
+  padding: 0 10px;
+}
+.twisted-img {
+  display: flex;
+  justify-content: flex-start;
+  width: 100vh;
+  height: 110vh;
+}
+
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
+  <title>Twisted Hate </title>
   <link href ="styles.css" rel = "stylesheet">
   <link
   rel="stylesheet"
@@ -18,9 +18,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
-<body class = "about-background">
+<body class = "twisted-background">
   <header>
-    <h1> About me!</h1>
+    <h1 class = "twisted-text"> Twisted Hate by Ana Huang</h1>
     <nav class = "nav-bar">
       <i class="fa-solid fa-bars"></i>
       <ul class="hidden--mobile nav-links"></ul>
@@ -34,17 +34,32 @@
       </ul>
     </nav>
   </header>
+  <main>
+    <div class = "twisted-img"> <img src ="https://mail.google.com/mail/u/0?ui=2&ik=77c20b298b&attid=0.3&permmsgid=msg-a:r-6352233763412269235&th=18c5f6348c31515c&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ9GKOxdIFwAOwCJ6fIzeiojPEuoMqHiN-YbL9DmCNaS6Pu8fIaarpE_YQKUpSXdytHZYeXFXENRGmVv_i1p4_yKDFz8dongZCnakkleNS9QHAuh9RxfwpE1JYo&disp=emb&realattid=18c5f6293f96287cd643"></img></div>
 
-  <div class = "about">
-    <h2> Hello! My name is Cassandra Brantley. </h2>
-      <p> Here's some fun information about me. Some fun facts about me:</p>
-      <ul>
-        <li> I'm 19 years old and I'm learning coding!</li>
-        <li> As I'm sure you can tell, I really enjoy reading. Hence, this web application.</li>
-        <li> Another fact about me is that I also really enjoy music. Music and reading go hand-in-hand for me.</li>
-        <li> Some of my hobbies include: reading, gaming, jamming out to music, and even occasionally I will write my own stories.</li>
-      </ul>
-  </div>
+    <div class = "twisted-comments">
+      <div class = "form-colors">
+      <h3 class = "h3-twisted"> Leave your comments here</h3>
+  <form id = "form" action = "https://formspree.io/f/xwkdgyje" method = "post">
+    <label for="name">Name:</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Your name"
+      required
+    />
+
+        <div>
+          <label for="msg">Enter your favorite quote/scene here:</label>
+          <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+      </div>
+
+    <div class = "twisted-rating"></div>
+  </main>
+<footer></footer>
 </body>
-<script src = "index.js"></script>
 </html>
