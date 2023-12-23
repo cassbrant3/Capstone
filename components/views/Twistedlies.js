@@ -27,7 +27,7 @@ export default () => html`
                 <label for="msg">Enter your favorite quote/scene here:</label>
                 <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
               </div>
-              <input type="submit" value="Submit" />
+              <input class="submit-button" type="submit" value="Submit" />
             </form>
           </div>
         </div>
@@ -37,10 +37,35 @@ export default () => html`
         </div>
 
         <div class="twisted-description">
-          <h1>DESCRIPTION OF BOOK</h1>
+          <h3>
+            "If my thoughts were chaos, she was my anchor. They always went back
+            to her."
+          </h3>
+          <p>
+            Charming, deadly, and smart enough to hide it, Christian Harper is a
+            monster dressed in the perfectly tailored suits of a gentleman. He
+            has little use for morals and even less use for love, but he can't
+            deny the strange pull he feels toward the woman living just one
+            floor below him. She's the object of his darkest desires, the only
+            puzzle he can't solve. And when the opportunity to get closer to her
+            arises, he breaks his own rules to offer her a deal she can't
+            refuse. Every monster has their weakness. She's his. His obsession.
+            His addiction. His only exception.
+          </p>
+          <p>
+            Sweet, shy, and introverted despite her social media fame, Stella
+            Alonso is a romantic who keeps her heart in a cage. Between her two
+            jobs, she has little time or desire for a relationship. But when a
+            threat from her past drives her into the arms--and house--of the
+            most dangerous man she's ever met, she's tempted to let herself feel
+            something for the first time in a long time. Because despite
+            Christian's cold nature, he makes her feel everything when she's
+            with him. Passionate. Protected. Truly wanted. Theirs is a love
+            twisted with secrets and tainted by lies...and when the truths are
+            finally revealed, they could shatter everything.
+          </p>
         </div>
       </div>
     </main>
-    <footer></footer>
   </body>
 `;
