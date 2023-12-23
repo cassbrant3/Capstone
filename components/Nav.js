@@ -3,7 +3,7 @@ import html from "html-literal";
 export default links => html`
   <nav>
     <div class="nav-bar">
-      <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+      <i class="fa-solid fa-bars"></i>
       <ul class="hidden--mobile nav-links">
         ${links
           .map(

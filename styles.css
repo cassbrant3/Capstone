@@ -1,11 +1,9 @@
 :root {
---background-color: #040303;
 --text-primary-color: #931621;
---text-secondary-color: #FFFFFF;
+--text-secondary-color: #040303;
 }
 * {
 font-family: 'Playfair Display', serif;
-background-color: var(--background-color);
 }
 
 .twisted-text {
@@ -15,44 +13,44 @@ color: var(--text-primary-color);
 .form-colors-contact {
   color: var(--text-secondary-color);
 }
+.submit-button-contact {
+  color: var(--text-secondary-color);
+}
 .form-colors, .twisted-description, .twisted-rating {
   color: var(--text-primary-color);
 }
 
+
+.submit-button {
+  color: var(--text-primary-color);
+}
 #h3-contact, .home-introduction, .about, .main-contact {
   color: var(--text-secondary-color);
 }
 .home-introduction {
   text-align: center;
 }
-nav {
+.nav-bar {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
   flex-direction: row;
 }
 
-nav > i {
-  padding: 1rem;
-  font-size: 2em;
+.nav-bar > ul > li {
+  display: inline;
 }
 
-nav > ul {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  padding: 0 0;
-}
-
-nav > ul > li {
-  padding: 0.5rem;
-  list-style-type: none;
-}
-nav > ul > li {
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid;
-  padding: 0.5rem 0.5rem;
-  border-radius: 25px;
+.nav-bar a {
+  float: left;
+  padding: 12px;
+  color: var(--text-primary-color);
+ &:active, &:hover {
+    color: var(--text-secondary-color);
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
 }
 
 nav > .fa-bars {
@@ -96,18 +94,31 @@ flex-direction: column;
   display: grid;
   grid-template-columns:45% 25%;
 }
-/* .twisted-comments {
-  display:flex;
-  justify-content: flex-start;
-} */
+
 .twisted-img {
   display: flex;
   justify-content: flex-start;
   width: 100vh;
   height: 110vh;
 }
-/* .twisted-rating,.twisted-description {
-  display: grid;
-  grid-template-rows: 15% 40%;
-} */
 
+#huang-books {
+  font-size: 1.2em;
+  height: auto;
+  width: 92.5%;
+  margin: auto;
+}
+
+#huang-books tbody {
+  width: 100%;
+}
+
+#huang-books th {
+  text-align: center;
+}
+
+#huang-books td,th {
+  text-align: center;
+  width: 25%;
+  word-spacing: 10%;
+}

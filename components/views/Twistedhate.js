@@ -27,7 +27,7 @@ export default () => html`
                 <label for="msg">Enter your favorite quote/scene here:</label>
                 <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
               </div>
-              <input type="submit" value="Submit" />
+              <input class="submit-button" type="submit" value="Submit" />
             </form>
           </div>
         </div>
@@ -37,7 +37,31 @@ export default () => html`
         </div>
 
         <div class="twisted-description">
-          <h1>DESCRIPTION OF BOOK</h1>
+          <h3>
+            "The possibility of you is better than the reality of anyone else."
+          </h3>
+          <p>
+            Gorgeous, cocky, and fast on his way to becoming a hotshot doctor.
+            Josh Chen has never met a woman he couldn't charm--except for Jules
+            Ambrose. The beautiful redhead has been a thorn in his side since
+            they met, but she also consumes his thoughts in a way no woman ever
+            has. When their animosity explodes into one unforgettable night, he
+            proposes a solution that'll get her out of his system once and for
+            all--an enemies-with-benefits arrangement with simple rules. No
+            jealousy. No strings attached. And absolutely no falling in love.
+          </p>
+          <p>
+            Outgoing and ambitious, Jules Ambrose is a former party girl who's
+            focused on one thing--passing the attorney's bar exam. The last
+            thing she needs is to get involved with a doctor who puts the suffer
+            in insufferable...no matter how good-looking he is. But the more she
+            gets to know him, the more she realizes there's more than meets the
+            eye to the man she's hated for so long. Her best friend's brother.
+            Her nemesis. And her only salvation. Theirs is a match made in hell,
+            and when the demons from their past catch up with them, they're
+            faced with truths that could either save them...or destroy
+            everything they've worked for.
+          </p>
         </div>
       </div>
     </main>

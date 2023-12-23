@@ -50,12 +50,8 @@ export default () => html`<body class = "contact-background">
             <input type="radio" name="subject" value="personal" id="personal" />
             <label for="personal">Personal message</label>
           </div>
-          <input type="submit" value="Submit" />
+          <input class = "submit-button-contact" type="submit" value="Submit" />
   </form>
   </div>
   </main>
-
-
-
-
 </body>`;
