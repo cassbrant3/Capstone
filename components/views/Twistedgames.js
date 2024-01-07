@@ -9,11 +9,7 @@ export default () => html`
         <div class="twisted-comments">
           <div class="form-colors">
             <h3 class="h3-twisted">Leave your comments here</h3>
-            <form
-              id="form"
-              action="https://formspree.io/f/xvojelye"
-              method="post"
-            >
+            <form id="games-form" action="" method="post">
               <label for="name">Name:</label>
               <input
                 type="text"
@@ -22,6 +18,19 @@ export default () => html`
                 placeholder="Your name"
                 required
               />
+
+              <div>
+                <label for="title"
+                  >Name of book you filled out a form for:
+                </label>
+                <select id="title" name="title">
+                  <option value="">Select a Book</option>
+                  <option value="twisted-love">Twisted Love</option>
+                  <option value="twisted-games">Twisted Games</option>
+                  <option value="twisted-hate">Twisted Hate</option>
+                  <option value="twisted-lies">Twisted Lies</option>
+                </select>
+              </div>
 
               <div>
                 <label for="msg">Enter your favorite quote/scene here:</label>
@@ -62,11 +71,11 @@ export default () => html`
             Bridget dreams of the freedom to live and love as she chooses. But
             when her brother abdicates, she's suddenly faced with the prospect
             of a loveless, politically expedient marriage and a throne she never
-            wanted. And as she navigates the intracies--and treacheries-- of her
-            new role, she must also hide her desire for a man she can't have.
-            Her bodyguard. Her protector. Her ultimate ruin. Unexpected and
-            forbidden, theirs is a love that could destroy a kingdom...and doom
-            them both.
+            wanted. And as she navigates the intricacies--and treacheries-- of
+            her new role, she must also hide her desire for a man she can't
+            have. have. Her bodyguard. Her protector. Her ultimate ruin.
+            Unexpected forbidden, theirs is a love that could destroy a
+            kingdom...and doom them both.
           </p>
         </div>
       </div>

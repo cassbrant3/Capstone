@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 
+import comments from "./routers/comments.js";
 // Load environment variables from .env file
 dotenv.config();
 
@@ -56,5 +57,7 @@ app.use(logging);
 app.get("/status", (request, response) => {
   response.status(200).json({ message: "Service healthy" });
 });
+
+app.use("/comments", comments);
 
 app.listen(PORT, () => console.log("Listening on port 4040"));

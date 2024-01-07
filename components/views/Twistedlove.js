@@ -8,15 +8,26 @@ export default () => html`<body class="twisted-background">
       <div class="twisted-comments">
         <div class="form-colors">
           <h3 class="h3-twisted"> Leave your comments here</h3>
-          <form id="form" action="https://formspree.io/f/xpzgvbne" method="post">
+          <form id="love" action="" method="post">
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" placeholder="Your name" required />
+
+            <div>
+                <label for="title">Name of book you filled out a form for:</label>
+                <select id="title" name="title">
+                  <option value="">Select a Book</option>
+                  <option value="twisted-love">Twisted Love</option>
+                  <option value="twisted-games">Twisted Games</option>
+                  <option value="twisted-hate">Twisted Hate</option>
+                  <option value="twisted-lies">Twisted Lies</option>
+                </select>
+              </div>
 
             <div>
               <label for="msg">Enter your favorite quote/scene here:</label>
               <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
             </div>
-            <input class="submit-button" type="submit" value="Submit" />
+            <input class="submit" type="submit" value="Submit Twisted Love Comment" />
         </div>
         </form>
       </div>
