@@ -15,13 +15,41 @@ function render(state = store.Home) {
     `;
 
   router.updatePageLinks();
-  afterRender();
+  afterRender(state);
 }
-function afterRender() {
+function afterRender(state) {
   // add menu toggle to bars icon in nav bar
   document.querySelector(".fa-bars").addEventListener("click", () => {
-    document.querySelector("nav > ul").classList.toggle("hidden--mobile");
+    document.querySelector("nav > div > ul").classList.toggle("hidden--mobile");
   });
+
+  if (state.view === "Twistedlove") {
+    document.querySelector("love").addEventListener("submit", event => {
+      event.preventDefault();
+
+      //Gets the form element
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+
+      //Request body object to send to the API
+      const requestData = {
+        name: inputList.name.value,
+        title: inputList.title.value,
+        msg: inputList.msg.value
+      };
+      console.log("request Body", requestData);
+
+      axios
+        .post(`${process.env.MONGODB}/comments`, requestData)
+        .then(response => {
+          store.Commentsection.comments.push(response.data);
+          router.navigate("/Commentsection");
+        })
+        .catch(error => {
+          console.log("It no work", error);
+        });
+    });
+  }
 }
 
 router.hooks({

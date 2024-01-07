@@ -6,7 +6,7 @@ export default () => html`
       <h2>Hello! My name is Cassandra Brantley.</h2>
       <p>Here's some fun information about me. Some fun facts about me:</p>
       <ul>
-        <li>I'm 19 years old and I'm learning coding!</li>
+        <li>I'm 20 years old and I'm learning coding!</li>
         <li>
           As I'm sure you can tell, I really enjoy reading. Hence, this web
           application.
