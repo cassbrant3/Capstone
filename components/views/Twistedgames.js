@@ -9,7 +9,7 @@ export default () => html`
         <div class="twisted-comments">
           <div class="form-colors">
             <h3 class="h3-twisted">Leave your comments here</h3>
-            <form id="games-form" action="" method="post">
+            <form id="games" action="" method="post">
               <label for="name">Name:</label>
               <input
                 type="text"
@@ -36,7 +36,11 @@ export default () => html`
                 <label for="msg">Enter your favorite quote/scene here:</label>
                 <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
               </div>
-              <input class="submit-button" type="submit" value="Submit" />
+              <input
+                class="submit-button"
+                type="submit"
+                value="Submit Twisted Games Comment"
+              />
             </form>
           </div>
         </div>
