@@ -24,7 +24,7 @@ function afterRender(state) {
   });
 
   if (state.view === "Twistedlove") {
-    document.querySelector("love").addEventListener("submit", event => {
+    document.querySelector("#love").addEventListener("submit", event => {
       event.preventDefault();
 
       //Gets the form element
@@ -40,7 +40,88 @@ function afterRender(state) {
       console.log("request Body", requestData);
 
       axios
-        .post(`${process.env.MONGODB}/comments`, requestData)
+        .post(`http://localhost:4040/comments`, requestData)
+        .then(response => {
+          store.Commentsection.comments.push(response.data);
+          router.navigate("/Commentsection");
+        })
+        .catch(error => {
+          console.log("It no work", error);
+        });
+    });
+  }
+  if (state.view === "Twistedgames") {
+    document.querySelector("#games").addEventListener("submit", event => {
+      event.preventDefault();
+
+      //Gets the form element
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+
+      //Request body object to send to the API
+      const requestData = {
+        name: inputList.name.value,
+        title: inputList.title.value,
+        msg: inputList.msg.value
+      };
+      console.log("request Body", requestData);
+
+      axios
+        .post(`http://localhost:4040/comments`, requestData)
+        .then(response => {
+          store.Commentsection.comments.push(response.data);
+          router.navigate("/Commentsection");
+        })
+        .catch(error => {
+          console.log("It no work", error);
+        });
+    });
+  }
+  if (state.view === "Twistedhate") {
+    document.querySelector("#hate").addEventListener("submit", event => {
+      event.preventDefault();
+
+      //Gets the form element
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+
+      //Request body object to send to the API
+      const requestData = {
+        name: inputList.name.value,
+        title: inputList.title.value,
+        msg: inputList.msg.value
+      };
+      console.log("request Body", requestData);
+
+      axios
+        .post(`http://localhost:4040/comments`, requestData)
+        .then(response => {
+          store.Commentsection.comments.push(response.data);
+          router.navigate("/Commentsection");
+        })
+        .catch(error => {
+          console.log("It no work", error);
+        });
+    });
+  }
+  if (state.view === "Twistedlies") {
+    document.querySelector("#lies").addEventListener("submit", event => {
+      event.preventDefault();
+
+      //Gets the form element
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+
+      //Request body object to send to the API
+      const requestData = {
+        name: inputList.name.value,
+        title: inputList.title.value,
+        msg: inputList.msg.value
+      };
+      console.log("request Body", requestData);
+
+      axios
+        .post(`http://localhost:4040/comments`, requestData)
         .then(response => {
           store.Commentsection.comments.push(response.data);
           router.navigate("/Commentsection");
@@ -72,6 +153,55 @@ router.hooks({
           })
           .catch(error => {
             console.log("no work", error);
+            done();
+          });
+        break;
+
+      case "Twistedlove":
+        axios
+          .get(`http://localhost:4040/comments`)
+          .then(response => {
+            store.Commentsection.comments = response.data;
+            done();
+          })
+          .catch(error => {
+            console.log("It no work", error);
+            done();
+          });
+        break;
+      case "Twistedgames":
+        axios
+          .get(`http://localhost:4040/comments`)
+          .then(response => {
+            store.Commentsection.comments = response.data;
+            done();
+          })
+          .catch(error => {
+            console.log("It no work", error);
+            done();
+          });
+        break;
+      case "Twistedhate":
+        axios
+          .get(`http://localhost:4040/comments`)
+          .then(response => {
+            store.Commentsection.comments = response.data;
+            done();
+          })
+          .catch(error => {
+            console.log("It no work", error);
+            done();
+          });
+        break;
+      case "Twistedlies":
+        axios
+          .get(`http://localhost:4040/comments`)
+          .then(response => {
+            store.Commentsection.comments = response.data;
+            done();
+          })
+          .catch(error => {
+            console.log("It no work", error);
             done();
           });
         break;
