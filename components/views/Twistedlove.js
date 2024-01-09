@@ -3,8 +3,8 @@ import twistedLoveCover from "../../assets/imgs/twisted-love-cover.jpg";
 export default () => html`<body class="twisted-background">
   <main>
     <div class="boxes-twisted">
-      <div class="twisted-img"> <img src=${twistedLoveCover}></div>
-
+      <div class="twisted-img"> <img src = "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71aXWhr9tTL._AC_UF1000,1000_QL80_.jpg"> </div>
+      <!-- <img src=${twistedLoveCover}> -->
       <div class="twisted-comments">
         <div class="form-colors">
           <h3 class="h3-twisted"> Leave your comments here</h3>
