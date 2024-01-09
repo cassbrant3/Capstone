@@ -53,9 +53,6 @@ color: var(--text-primary-color);
   }
 }
 
-nav > .fa-bars {
-  display: none;
-}
 .main-contact {
   text-align: center;
 font-style: italic;
@@ -74,15 +71,21 @@ header > h1 {
 }
 
 @media (min-width: 550px) {
-  nav > .fa-bars {
+  .nav-bar > .fa-bars {
     display: none;
   }
 }
-@media (max-width: 550px) {
+
+/* nav > .fa-bars {
+  display: none;
+} */
+
+@media (max-width: 549px){
   .hidden--mobile {
-    display: none;
+    display: none !important;
   }
 }
+
 .link {
   display: flex;
 flex-direction: column;
@@ -98,8 +101,9 @@ flex-direction: column;
 .twisted-img {
   display: flex;
   justify-content: flex-start;
-  width: 100vh;
+  width: 80vh;
   height: 110vh;
+  image-orientation:from-image;
 }
 
 #huang-books {

@@ -20,7 +20,7 @@ function render(state = store.Home) {
 function afterRender(state) {
   // add menu toggle to bars icon in nav bar
   document.querySelector(".fa-bars").addEventListener("click", () => {
-    document.querySelector(".nav-links").classList.toggle("hidden--mobile");
+    document.querySelector(".nav-bar > ul").classList.toggle("hidden--mobile");
   });
 
   if (state.view === "Twistedlove") {
