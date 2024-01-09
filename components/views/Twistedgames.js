@@ -4,8 +4,12 @@ export default () => html`
   <body class="twisted-background">
     <main>
       <div class="boxes-twisted">
-        <div class="twisted-img"><img src=${twistedGamesCover} /></div>
-
+        <div class="twisted-img">
+          <img
+            src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71h5+dpAriL._AC_UF1000,1000_QL80_.jpg"
+          />
+        </div>
+        <!-- <img src=${twistedGamesCover} /> -->
         <div class="twisted-comments">
           <div class="form-colors">
             <h3 class="h3-twisted">Leave your comments here</h3>
