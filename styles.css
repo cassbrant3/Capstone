@@ -103,7 +103,6 @@ flex-direction: column;
   justify-content: flex-start;
   width: 80vh;
   height: 110vh;
-  transform: rotate(90deg);
 }
 
 #huang-books {
