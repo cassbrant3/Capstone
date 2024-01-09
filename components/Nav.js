@@ -2,7 +2,6 @@ import html from "html-literal";
 
 export default links => html`
   <nav class="nav-bar">
-    <!-- <div class="nav-bar"> -->
     <i class="fa-solid fa-bars"></i>
     <ul class="hidden--mobile nav-links">
       ${links
