@@ -40,7 +40,7 @@ function afterRender(state) {
       console.log("request Body", requestData);
 
       axios
-        .post(`http://localhost:4040/comments`, requestData)
+        .post(`${process.env.RENDER}/comments`, requestData)
         .then(response => {
           store.Commentsection.comments.push(response.data);
           router.navigate("/Commentsection");
@@ -67,7 +67,7 @@ function afterRender(state) {
       console.log("request Body", requestData);
 
       axios
-        .post(`http://localhost:4040/comments`, requestData)
+        .post(`${process.env.RENDER}/comments`, requestData)
         .then(response => {
           store.Commentsection.comments.push(response.data);
           router.navigate("/Commentsection");
@@ -94,9 +94,9 @@ function afterRender(state) {
       console.log("request Body", requestData);
 
       axios
-        .post(`http://localhost:4040/comments`, requestData)
+        .post(`${process.env.RENDER}/comments`, requestData)
         .then(response => {
-          store.Commentsection.comments.push(response.data);
+          store.Commentsection.comments = response.data;
           router.navigate("/Commentsection");
         })
         .catch(error => {
@@ -121,7 +121,7 @@ function afterRender(state) {
       console.log("request Body", requestData);
 
       axios
-        .post(`http://localhost:4040/comments`, requestData)
+        .post(`${process.env.RENDER}/comments`, requestData)
         .then(response => {
           store.Commentsection.comments.push(response.data);
           router.navigate("/Commentsection");
@@ -159,7 +159,7 @@ router.hooks({
 
       case "Twistedlove":
         axios
-          .get(`${process.env.RENDER}`)
+          .get(`${process.env.RENDER}/comments`)
           .then(response => {
             store.Commentsection.comments = response.data;
             done();
@@ -171,7 +171,7 @@ router.hooks({
         break;
       case "Twistedgames":
         axios
-          .get(`${process.env.RENDER}`)
+          .get(`${process.env.RENDER}/comments`)
           .then(response => {
             store.Commentsection.comments = response.data;
             done();
@@ -183,7 +183,7 @@ router.hooks({
         break;
       case "Twistedhate":
         axios
-          .get(`${process.env.RENDER}`)
+          .get(`${process.env.RENDER}/comments`)
           .then(response => {
             store.Commentsection.comments = response.data;
             done();
@@ -195,7 +195,19 @@ router.hooks({
         break;
       case "Twistedlies":
         axios
-          .get(`${process.env.RENDER}`)
+          .get(`${process.env.RENDER}/comments`)
+          .then(response => {
+            store.Commentsection.comments = response.data;
+            done();
+          })
+          .catch(error => {
+            console.log("It no work", error);
+            done();
+          });
+        break;
+      case "Commentsection":
+        axios
+          .get(`${process.env.RENDER}/comments`)
           .then(response => {
             store.Commentsection.comments = response.data;
             done();
