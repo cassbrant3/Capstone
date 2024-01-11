@@ -1,9 +1,10 @@
 import html from "html-literal";
 import twistedLiesCover from "../../assets/imgs/twisted-lies-cover.jpg";
+import butterfly from "../../assets/imgs/summer.png";
 export default () => html`
   <body class="twisted-background">
     <main>
-      <div class="boxes-twisted">
+      <div class="boxes-twisted1">
         <div class="twisted-img"><<img src=${twistedLiesCover} /></div>
 
         <div class="twisted-comments">
@@ -44,13 +45,33 @@ export default () => html`
             </form>
           </div>
         </div>
+      </div>
 
+      <div class="boxes-twisted2">
         <div class="twisted-rating">
-          <h1>THERE WILL BE A STAR SCALE HERE</h1>
+          <!-- Will add an interactive rating scale later -->
+          <h3>My personal rating on this book:</h3>
+          <div id="stars">
+            <i class="fa-solid fa-star fa-spin" style="color: #05ff16;"></i>
+            <i class="fa-solid fa-star fa-spin" style="color: #05ff16;"></i>
+            <i class="fa-solid fa-star fa-spin" style="color: #05ff16;"></i>
+            <i class="fa-solid fa-star fa-spin" style="color: #05ff16;"></i>
+            <i class="fa-solid fa-star fa-spin" style="color: #05ff16;"></i>
+          </div>
+          <p>
+            Yet another one of my favorite books in this series. Don't get me
+            wrong, I loved them all, but Christian Harper HITS different. I've
+            always been a fan of the "fake-dating" trope in books. They ALWAYS.
+            ALWAYS. End up together. I didn't mention before, but in all of the
+            books the men are all possessive and protective of their women and I
+            am a SUCKER for that. Something about that personality in book's
+            just.. chef's kiss. I love it. Love, love, love it!
+          </p>
         </div>
 
         <div class="twisted-description">
           <h3>
+            <img src=${butterfly} />
             "If my thoughts were chaos, she was my anchor. They always went back
             to her."
           </h3>

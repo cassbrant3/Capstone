@@ -1,9 +1,10 @@
 import html from "html-literal";
 import twistedHateCover from "../../assets/imgs/twisted-hate-cover.jpg";
+import fire from "../../assets/imgs/fire.png";
 export default () => html`
   <body class="twisted-background">
     <main>
-      <div class="boxes-twisted">
+      <div class="boxes-twisted1">
         <div class="twisted-img">
           <img src=${twistedHateCover} />
         </div>
@@ -45,13 +46,34 @@ export default () => html`
             </form>
           </div>
         </div>
+      </div>
 
+      <div class="boxes-twisted2">
         <div class="twisted-rating">
-          <h1>THERE WILL BE A STAR SCALE HERE</h1>
+          <!-- Will add an interactive rating scale later -->
+          <h3>My personal rating on this book:</h3>
+          <div id="stars">
+            <i class="fa-solid fa-star fa-beat" style="color: #bd0000;"></i>
+            <i class="fa-solid fa-star fa-beat" style="color: #bd0000;"></i>
+            <i class="fa-solid fa-star fa-beat" style="color: #bd0000;"></i>
+            <i class="fa-solid fa-star fa-beat" style="color: #bd0000;"></i>
+            <i class="fa-solid fa-star fa-beat" style="color: #bd0000;"></i>
+          </div>
+          <p>
+            This book. This. Book. I am in love with Josh Chen and Jules
+            Ambrose. Ironically enough, I have always been a huge fan of the
+            "enemies to lovers" trope. I loved the way Josh and Jules fought in
+            this book. Another thing I loved, is when they were finally together
+            they still bickered, but not in a hateful way. There's one thing I
+            ABSOLUTELY despise about reading other people writing the "enemies
+            to lovers" trope, they always make them stop bickering and they
+            become... "soft" with each other. ANother chef's kiss from me.
+          </p>
         </div>
 
         <div class="twisted-description">
           <h3>
+            <img src=${fire} />
             "The possibility of you is better than the reality of anyone else."
           </h3>
           <p>

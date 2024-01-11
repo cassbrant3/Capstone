@@ -3,30 +3,26 @@
 --text-secondary-color: #040303;
 }
 * {
-font-family: 'Playfair Display', serif;
+  font-family: 'Indie Flower', cursive;
+  font-size:x-large;
 }
 
-.twisted-text {
+.about {
+  text-align: center;
+}
+
+.about > ul {
+  display: inline-block; text-align: left;
+}
+.twisted-text, .twisted-description, .submit-button {
 color: var(--text-primary-color);
 }
 
-.form-colors-contact {
+
+.form-colors, .form-colors-contact, .submit-button-contact, #h3-contact, .home-introduction, .about, .main-contact {
   color: var(--text-secondary-color);
-}
-.submit-button-contact {
-  color: var(--text-secondary-color);
-}
-.form-colors, .twisted-description, .twisted-rating {
-  color: var(--text-primary-color);
 }
 
-
-.submit-button {
-  color: var(--text-primary-color);
-}
-#h3-contact, .home-introduction, .about, .main-contact {
-  color: var(--text-secondary-color);
-}
 .home-introduction {
   text-align: center;
 }
@@ -43,9 +39,9 @@ color: var(--text-primary-color);
 .nav-bar a {
   float: left;
   padding: 12px;
-  color: var(--text-primary-color);
+  color: var(--text-secondary-color);
  &:active, &:hover {
-    color: var(--text-secondary-color);
+    color: var(--text-primary-color);
     background-color: transparent;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -67,7 +63,7 @@ font-style: italic;
 }
 header > h1 {
   text-align: center;
-  color: var(--text-secondary-color);
+  color: var(--text-primary-color);
 }
 
 @media (min-width: 550px) {
@@ -93,9 +89,14 @@ flex-direction: column;
 
 
 
-.boxes-twisted {
+.boxes-twisted1 {
   display: grid;
   grid-template-columns:45% 25%;
+}
+
+.boxes-twisted2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .twisted-img {
@@ -125,3 +126,8 @@ flex-direction: column;
   width: 25%;
   word-spacing: 10%;
 }
+
+#stars {
+  font-size: 2rem;
+}
+
