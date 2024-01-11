@@ -1,9 +1,10 @@
 import html from "html-literal";
 import twistedGamesCover from "../../assets/imgs/twisted-games-cover.jpg";
+import crown from "../../assets/imgs/crown.png";
 export default () => html`
   <body class="twisted-background">
     <main>
-      <div class="boxes-twisted">
+      <div class="boxes-twisted1">
         <div class="twisted-img">
           <img src=${twistedGamesCover} />
         </div>
@@ -45,13 +46,32 @@ export default () => html`
             </form>
           </div>
         </div>
+      </div>
 
+      <div class="boxes-twisted2">
         <div class="twisted-rating">
-          <h1>THERE WILL BE A STAR SCALE HERE</h1>
+          <!-- Will add an interactive rating scale later -->
+          <h3>My personal rating on this book:</h3>
+          <div id="stars">
+            <i class="fa-solid fa-star fa-flip" style="color: #e8c854;"></i>
+            <i class="fa-solid fa-star fa-flip" style="color: #e8c854;"></i>
+            <i class="fa-solid fa-star fa-flip" style="color: #e8c854;"></i>
+            <i class="fa-solid fa-star fa-flip" style="color: #e8c854;"></i>
+            <i class="fa-solid fa-star fa-flip" style="color: #e8c854;"></i>
+          </div>
+          <p>
+            Yet again, I absolutely loved this book. I was skeptical at first
+            because I'm not a huge fan of the "bodyguard x princess" trope. But
+            I thoroughly enjoyed this book. The plot of this book was chef's
+            kiss.
+          </p>
         </div>
 
         <div class="twisted-description">
-          <h3>"Perhaps...I was always meant to find my way to you."</h3>
+          <h3>
+            <img src=${crown} />
+            "Perhaps...I was always meant to find my way to you."
+          </h3>
           <p>
             Stoic, broody, and arrogant, elite bodyguard Rhys Larsen has two
             rules.

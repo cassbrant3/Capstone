@@ -23,6 +23,7 @@ function afterRender(state) {
     document.querySelector(".nav-bar > ul").classList.toggle("hidden--mobile");
   });
 
+  //Forms on views
   if (state.view === "Twistedlove") {
     document.querySelector("#love").addEventListener("submit", event => {
       event.preventDefault();
