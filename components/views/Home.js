@@ -9,10 +9,6 @@ export default () => html`
         <i class="fa-solid fa-mug-hot fa-xs" style="color: #000000;"></i>
       </h3>
       <i class="fa-solid fa-heart fa-xl" style="color: #560183;"></i>
-      <i class="fa-solid fa-heart fa-lg" style="color: #560183;"></i>
-      <i class="fa-solid fa-heart" style="color: #560183;"></i>
-      <i class="fa-solid fa-heart fa-lg" style="color: #560183;"></i>
-      <i class="fa-solid fa-heart fa-xl" style="color: #560183;"></i>
     </div>
   </main>
 `;

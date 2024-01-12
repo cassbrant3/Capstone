@@ -13,7 +13,13 @@ const commentSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
-    enum: ["twisted-love", "twisted-games", "twisted-hate", "twisted-lies"]
+    enum: [
+      "twisted-love",
+      "twisted-games",
+      "twisted-hate",
+      "twisted-lies",
+      "king-of-wrath"
+    ]
   }
 });
 
