@@ -9,6 +9,10 @@ export default [
   { title: "Kingofwrath", text: "King of Wrath" },
   { title: "Kingofpride", text: "King of Pride" },
   { title: "Kingofgreed", text: "King of Greed" },
+  { title: "Kingofsloth", text: "King of Sloth" },
+  { title: "Kingofenvy", text: "King of Envy" },
+  { title: "Kingofgluttony", text: "King of Gluttony" },
+  { title: "Kingoflust", text: "King of Lust" },
   { title: "Anahuangbooks", text: "Ana Huang's books" },
   { title: "Commentsection", text: "Comment Section" }
 ];
