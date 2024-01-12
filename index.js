@@ -132,6 +132,34 @@ function afterRender(state) {
         });
     });
   }
+  if (state.view === "Kingofwrath") {
+    document.querySelector("#wrath").addEventListener("submit", event => {
+      event.preventDefault();
+
+      //Gets the form element
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+
+      //Request body object to send to the API
+      const requestData = {
+        name: inputList.name.value,
+        title: inputList.title.value,
+        msg: inputList.msg.value
+      };
+      console.log("request Body", requestData);
+
+      axios
+        .post(`${process.env.RENDER}/comments`, requestData)
+        .then(response => {
+          store.Commentsection.comments.push(response.data);
+          router.navigate("/Commentsection");
+        })
+        .catch(error => {
+          console.log("It no work", error);
+        });
+    });
+  }
+}
 
 router.hooks({
   before: (done, params) => {
@@ -205,6 +233,18 @@ router.hooks({
             done();
           });
         break;
+      case "Kingofwrath":
+        axios
+          .get(`${process.env.RENDER}/comments`)
+          .then(response => {
+            store.Commentsection.comments = response.data;
+            done();
+          })
+          .catch(error => {
+            console.log("It no work", error);
+            done();
+          });
+        break;
       case "Commentsection":
         axios
           .get(`${process.env.RENDER}/comments`)
@@ -245,4 +285,3 @@ router
     }
   })
   .resolve();
-
