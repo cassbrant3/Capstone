@@ -5,6 +5,7 @@
 * {
   font-family: 'Indie Flower', cursive;
   font-size:x-large;
+  margin: 0;
 }
 
 .about {
@@ -92,11 +93,13 @@ flex-direction: column;
 .boxes-twisted1 {
   display: grid;
   grid-template-columns:45% 25%;
+  gap: 30px;
 }
 
 .boxes-twisted2 {
   display: grid;
   grid-template-columns: 50% 50%;
+  gap: 20px;
 }
 
 .twisted-img {
@@ -130,4 +133,3 @@ flex-direction: column;
 #stars {
   font-size: 2rem;
 }
-
