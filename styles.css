@@ -15,11 +15,22 @@
 .about > ul {
   display: inline-block; text-align: left;
 }
-.twisted-text, .twisted-description, .submit-button {
+.twisted-text, .submit-button {
 color: var(--text-primary-color);
 }
 
-
+.twisted-love-description {
+  color: #164ee9;
+}
+.twisted-games-description {
+  color: #E4AB1B;
+}
+.twisted-hate-description {
+  color: #BD0000;
+}
+.twisted-lies-description {
+  color: #178F20;
+}
 .form-colors, .form-colors-contact, .submit-button-contact, #h3-contact, .home-introduction, .about, .main-contact {
   color: var(--text-secondary-color);
 }
@@ -102,11 +113,46 @@ flex-direction: column;
   gap: 20px;
 }
 
+.home-introduction, .about, .main-contact {
+  display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+}
+.about {
+  margin: 5% 0;
+}
+
+
 .twisted-img {
   display: flex;
   justify-content: flex-start;
   width: 80vh;
   height: 110vh;
+}
+
+.twisted-love-song {
+  display: flex;
+  justify-content: flex-start;
+  width: 40vh;
+  height: 50vh;
+}
+.twisted-games-song {
+  display: flex;
+  justify-content: flex-start;
+  width: 45vh;
+  height: 60vh;
+}
+.twisted-hate-song {
+  display: flex;
+  justify-content: flex-start;
+  width: 40vh;
+  height: 55vh;
+}
+.twisted-lies-song {
+  display: flex;
+  justify-content: flex-start;
+  width: 40vh;
+  height: 56vh;
 }
 
 #huang-books {

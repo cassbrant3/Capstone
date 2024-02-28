@@ -1,6 +1,7 @@
 import html from "html-literal";
 import twistedLiesCover from "../../assets/imgs/twisted-lies-cover.jpg";
 import butterfly from "../../assets/imgs/summer.png";
+import unholy from "../../assets/imgs/unholy-twisted-lies.png";
 export default () => html`
   <body class="twisted-background">
     <main>
@@ -67,9 +68,13 @@ export default () => html`
             am a SUCKER for that. Something about that personality in book's
             just.. chef's kiss. I love it. Love, love, love it!
           </p>
+          <h2>Here's a song that I think fits Twisted Lies:
+            <div class="twisted-lies-song">
+            <img src=${unholy} />
+          </div>
         </div>
 
-        <div class="twisted-description">
+        <div class="twisted-lies-description">
           <h3>
             <img src=${butterfly} />
             "If my thoughts were chaos, she was my anchor. They always went back

@@ -1,6 +1,7 @@
 import html from "html-literal";
 import twistedLoveCover from "../../assets/imgs/twisted-love-cover.jpg";
 import sun from "../../assets/imgs/sun.png";
+import warning from "../../assets/imgs/warning-twisted-love.png";
 export default () => html`
 <body class="twisted-background">
   <main>
@@ -46,11 +47,15 @@ export default () => html`
           <i class="fa-solid fa-star fa-bounce" style="color: #84caf5;"></i>
           <i class="fa-solid fa-star fa-bounce" style="color: #84caf5;"></i>
           </div>
-          <p> I absolutely loved this book. Actually, this entire series has been my favorite out of all of the romance books I've read. The only thing I wish is that Twisted Love would've had better scenes of Alex and Ava. In the other books, they have (in my opinion) better scenes than in their actual book. But, nonetheless, I still loved this book.</p>
+          <p> I absolutely loved this book. Actually, this entire series has been my favorite out of all of the romance books I've read. The only thing I wish is that Twisted Love would've had better scenes of Alex and Ava. In the other books, they have (in my opinion) better scenes than in their actual book. But, nonetheless, I still loved this book. Plus, the scene where Alex answered the phone?? Hoo-wee mama.. Ava is one lucky woman.</p>
+          <h2> Here is the song that I think fits Twisted Love:</h2>
+          <div class="twisted-love-song">
+            <img src=${warning}>
+</div>
         </div>
 
 
-    <div class="twisted-description">
+    <div class="twisted-love-description">
       <h3><img src=${sun}> "You are the light to my dark, sunshine. Without you, I'm lost." </h3>
       <p> Alex Volkov is a devil blessed with the face of an angel and cursed with a past he can't escape. Driven by a tragedy that has haunted him for most of his life, his ruthless pursuits for success and vengeance leave little room for matters of the heart. But when he's forced to look after his best friend's sister, he starts to feel something in his chest. A crack. A melt. A fire that could end his world as he knew it.</p>
       <p> Ava Chen is a free spirit trapped by nightmares of a childhood she can't remember. But despite her broken past, she's never stopped seeing the beauty in the world...including the heart beneath the icy exterior of a man she shouldn't want. Her brother's best friend. Her neighbor. Her savior and her downfall. Theirs is a love that was never supposed to happen--but when it does, it unleashes secrets that could destroy them both...and everything they hold dear.</p>

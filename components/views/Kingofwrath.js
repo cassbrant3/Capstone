@@ -23,6 +23,7 @@ export default () => html`
                   <option value="twisted-hate">Twisted Hate</option>
                   <option value="twisted-lies">Twisted Lies</option>
                   <option value="king-of-wrath">King of Wrath</option>
+                  <option value="king-of-pride">King of Pride</option>
                 </select>
               </div>
 

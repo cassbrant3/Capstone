@@ -18,7 +18,8 @@ const commentSchema = new mongoose.Schema({
       "twisted-games",
       "twisted-hate",
       "twisted-lies",
-      "king-of-wrath"
+      "king-of-wrath",
+      "king-of-pride"
     ]
   }
 });
