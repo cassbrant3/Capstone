@@ -1,6 +1,7 @@
 import html from "html-literal";
 import twistedGamesCover from "../../assets/imgs/twisted-games-cover.jpg";
 import crown from "../../assets/imgs/crown.png";
+import bow from "../../assets/imgs/bow-twisted-games.png";
 export default () => html`
   <body class="twisted-background">
     <main>
@@ -63,11 +64,16 @@ export default () => html`
             Yet again, I absolutely loved this book. I was skeptical at first
             because I'm not a huge fan of the "bodyguard x princess" trope. But
             I thoroughly enjoyed this book. The plot of this book was chef's
-            kiss.
+            kiss. Not to mention.. when Rhys told Bridget to crawl to him??
+            Folded like a damn pretzel.
           </p>
+          <h2>Here is a song that I think fits Twisted Games:</h2>
+          <div class="twisted-games-song">
+            <img src=${bow} />
+          </div>
         </div>
 
-        <div class="twisted-description">
+        <div class="twisted-games-description">
           <h3>
             <img src=${crown} />
             "Perhaps...I was always meant to find my way to you."

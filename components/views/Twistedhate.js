@@ -1,6 +1,7 @@
 import html from "html-literal";
 import twistedHateCover from "../../assets/imgs/twisted-hate-cover.jpg";
 import fire from "../../assets/imgs/fire.png";
+import hateYou from "../../assets/imgs/hate-you-twisted-hate.png";
 export default () => html`
   <body class="twisted-background">
     <main>
@@ -69,9 +70,13 @@ export default () => html`
             to lovers" trope, they always make them stop bickering and they
             become... "soft" with each other. ANother chef's kiss from me.
           </p>
+          <h2>Here's a song that I think fits Twisted Hate:
+            <div class="twisted-hate-song">
+            <img src=${hateYou} />
+          </div>
         </div>
 
-        <div class="twisted-description">
+        <div class="twisted-hate-description">
           <h3>
             <img src=${fire} />
             "The possibility of you is better than the reality of anyone else."
